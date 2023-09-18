@@ -1,0 +1,288 @@
+ID,TEXT
+1.1,establish and implement firewall and router configuration standards that include the following
+1.1.1,a formal process for approving and testing all network connections and changes to the firewall and router configurations
+1.1.2,"current network diagram that identifies all connections between the cardholder data environment and other networks, including any wireless networks"
+1.1.3,current diagram that shows all cardholder data flows across systems and networks
+1.1.4,requirements for a firewall at each internet connection and between any demilitarized zone dmz and the internal network zone
+1.1.5,"description of groups, roles, and responsibilities for management of network components"
+1.1.6,"documentation of business justification and approval for use of all services, protocols, and ports allowed, including documentation of security features implemented for those protocols considered to be insecure."
+1.1.7,requirement to review firewall and router rule sets at least every six months
+1.2,build firewall and router configurations that restrict connections between untrusted networks and any system components in the cardholder data environment.
+1.2.1,"restrict inbound and outbound traffic to that which is necessary for the cardholder data environment, and specifically deny all other traffic."
+1.2.2,secure and synchronize router configuration files.
+1.2.3,"install perimeter firewalls between all wireless networks and the cardholder data environment, and configure these firewalls to deny or, if traffic is necessary for business purposes, permit only authorized traffic between the wireless environment and the cardholder data environment."
+1.3,prohibit direct public access between the internet and any system component in the cardholder data environment.
+1.3.1,"implement a dmz to limit inbound traffic to only system components that provide authorized publicly accessible services, protocols, and ports."
+1.3.2,limit inbound internet traffic to ip addresses within the dmz.
+1.3.3,implement anti-spoofing measures to detect and block forged source ip addresses from entering the network.
+1.3.4,do not allow unauthorized outbound traffic from the cardholder data environment to the internet.
+1.3.5,permit only established connections into the network.
+1.3.6,"place system components that store cardholder data such as a database in an internal network zone, segregated from the dmz and other untrusted networks."
+1.3.7,do not disclose private ip addresses and routing information to unauthorized parties.
+1.4,"install personal firewall software or equivalent functionality on any portable computing devices including company andor employee-owned that connect to the internet when outside the network for example, laptops used by employees, and which are also used to access the cde. firewall or equivalent configurations include specific configuration settings are defined. personal firewall or equivalent functionality is actively running. personal firewall or equivalent functionality is not alterable by users of the portable computing devices."
+1.5,"ensure that security policies and operational procedures for managing firewalls are documented, in use, and known to all affected parties."
+2,"always change vendor-supplied defaults and remove or disable unnecessary default accounts before installing a system on the network. for wireless environments connected to the cardholder data environment or transmitting cardholder data, change all wireless vendor defaults at installation, including but not limited to default wireless encryption keys, passwords, and snmp community strings. develop configuration standards for all system components. assure that these standards address all known security vulnerabilities and are consistent with industry-accepted system hardening standards. implement only one primary function per server to prevent functions that require different security levels from co-existing on the same server. for example, web servers, database servers, and dns should be implemented on separate servers. enable only necessary services, protocols, daemons, etc., as required for the function of the system. implement additional security features for any required services, protocols, or daemons that are considered to be insecure. configure system security parameters to prevent misuse. remove all unnecessary functionality, such as scripts, drivers, features, subsystems, file systems, and unnecessary web servers. encrypt all non-console administrative access using strong cryptography. maintain an inventory of system components that are in scope for pci dss. ensure that security policies and operational procedures for managing vendor defaults and other security parameters are documented, in use, and known to all affected parties. shared hosting providers must"
+2.1,always change vendor-supplied defaults and remove or disable unnecessary default accounts before installing a system on the network.
+2.1.1,"for wireless environments connected to the cardholder data environment or transmitting cardholder data, change all wireless vendor defaults at installation, including but not limited to default wireless encryption keys, passwords, and snmp community strings."
+2.2,develop configuration standards for all system components. assure that these standards address all known security vulnerabilities and are consistent with industry-accepted system hardening standards.
+2.2.1,"implement only one primary function per server to prevent functions that require different security levels from co-existing on the same server. for example, web servers, database servers, and dns should be implemented on separate servers."
+2.2.2,"enable only necessary services, protocols, daemons, etc., as required for the function of the system."
+2.2.3,"implement additional security features for any required services, protocols, or daemons that are considered to be insecure."
+2.2.4,configure system security parameters to prevent misuse.
+2.2.5,"remove all unnecessary functionality, such as scripts, drivers, features, subsystems, file systems, and unnecessary web servers."
+2.3,encrypt all non-console administrative access using strong cryptography.
+2.4,maintain an inventory of system components that are in scope for pci dss.
+2.5,"ensure that security policies and operational procedures for managing vendor defaults and other security parameters are documented, in use, and known to all affected parties."
+2.6,shared hosting providers must
+3.1,"keep cardholder data storage to a minimum by implementing data retention and disposal policies, procedures and processes that include at least the following for all cardholder data chd storage limiting data storage amount and retention time to that which is required for legal, regulatory, andor business requirements specific retention requirements for cardholder data processes for secure deletion of data when no longer needed a quarterly process for identifying and securely deleting stored cardholder data that exceeds defined retention.pci dss requirements"
+3.2,"do not store sensitive authentication data after authorization even if encrypted. if sensitive authentication data is received, render all data unrecoverable upon completion of the authorization process."
+3.2.1,"do not store the full contents of any track from the magnetic stripe located on the back of a card, equivalent data contained on a chip, or elsewhere after authorization. this data is alternatively called full track, track, track , track , and magnetic-stripe data."
+3.2.2,do not store the card verification code or value three-digit or four-digit number printed on the front or back of a payment card used to verify card-not- present transactions after authorization.
+3.2.3,do not store the personal identification number pin or the encrypted pin block after authorization.
+3.3,"mask pan when displayed the first six and last four digits are the maximum number of digits to be displayed, such that only personnel with a legitimate business need can see more than the first sixlast four digits of the pan."
+3.4,"render pan unreadable anywhere it is stored including on portable digital media, backup media, and in logs by using any of the following approaches one-way hashes based on strong cryptography, hash must be of the entire pan truncation hashing cannot be used to replace the truncated segment of pan index tokens and pads pads must be securely stored strong cryptography with associated key-management processes and procedures."
+3.4.1,"if disk encryption is used rather than file- or column-level database encryption, logical access must be managed separately and independently of native operating system authentication and access control mechanisms for example, by not using local user account databases or general network login credentials. decryption keys must not be associated with user accounts."
+3.5,document and implement procedures to protect keys used to secure stored cardholder data against disclosure and misuse
+3.5.1,"additional requirement for service providers only maintain a documented description of the cryptographic architecture that includes details of all algorithms, protocols, and keys used for the protection of cardholder data, including key strength and expiry date description of the key usage for each key inventory of any hsms and other scds used for key management"
+3.5.2,restrict access to cryptographic keys to the fewest number of custodians necessary.
+3.5.3,"store secret and private keys used to encryptdecrypt cardholder data in one or more of the following forms at all times encrypted with a key-encrypting key that is at least as strong as the data- encrypting key, and that is stored separately from the data-encrypting key within a secure cryptographic device such as a hardware host security module hsm or pts-approved point-of-interaction device as at least two full-length key components or key shares, in accordance with an industry- accepted method"
+3.5.4,store cryptographic keys in the fewest possible locations.
+3.6,"fully document and implement all key- management processes and procedures for cryptographic keys used for encryption of cardholder data, including the following"
+3.6.1,generation of strong cryptographic keys
+3.6.2,secure cryptographic key distribution
+3.6.3,secure cryptographic key storage
+3.6.4,"cryptographic key changes for keys that have reached the end of their cryptoperiod for example, after a defined period of time has passed andor after a certain amount of cipher-text has been produced by a given key, as defined by the associated application vendor or key owner, and based on industry best practices and guidelines for example, nist special publication -."
+3.6.5,"retirement or replacement for example, archiving, destruction, andor revocation of keys as deemed necessary when the integrity of the key has been weakened for example, departure of an employee with knowledge of a clear-text key component, or keys are suspected of being compromised."
+3.6.6,"if manual clear-text cryptographic key-management operations are used, these operations must be managed using split knowledge and dual control."
+3.6.7,prevention of unauthorized substitution of cryptographic keys.
+3.6.8,requirement for cryptographic key custodians to formally acknowledge that they understand and accept their key- custodian responsibilities.
+3.7,"ensure that security policies and operational procedures for protecting stored cardholder data are documented, in use, and known to all affected parties."
+4.1,"use strong cryptography and security protocols to safeguard sensitive cardholder data during transmission over open, public networks, including the following only trusted keys and certificates are accepted. the protocol in use only supports secure versions or configurations. the encryption strength is appropriate for the encryption methodology in use."
+4.1.1,"ensure wireless networks transmitting cardholder data or connected to the cardholder data environment, use industry best practices to implement strong encryption for authentication and transmission."
+4.2,"never send unprotected pans by end- user messaging technologies for example, e- mail, instant messaging, sms, chat, etc.."
+4.3,"ensure that security policies and operational procedures for encrypting transmissions of cardholder data are documented, in use, and known to all affected parties."
+5,"deploy anti-virus software on all systems commonly affected by malicious software particularly personal computers and servers. ensure that anti-virus programs are capable of detecting, removing, and protecting against all known types of malicious software. for systems considered to be not commonly affected by malicious software, perform periodic evaluations to identify and evaluate evolving malware threats in order to confirm whether such systems continue to not require anti-virus software. ensure that all anti-virus mechanisms are maintained as follows are kept current, perform periodic scans generate audit logs which are retained per pci dss requirement ..pci dss requirements. ensure that anti-virus mechanisms are actively running and cannot be disabled or altered by users, unless specifically authorized by management on a case-by-case basis for a limited time period. ensure that security policies and operational procedures for protecting systems against malware are documented, in use, and known to all affected parties."
+5.1,deploy anti-virus software on all systems commonly affected by malicious software particularly personal computers and servers.
+5.1.1,"ensure that anti-virus programs are capable of detecting, removing, and protecting against all known types of malicious software."
+5.1.2,"for systems considered to be not commonly affected by malicious software, perform periodic evaluations to identify and evaluate evolving malware threats in order to confirm whether such systems continue to not require anti-virus software."
+5.2,"ensure that all anti-virus mechanisms are maintained as follows are kept current, perform periodic scans generate audit logs which are retained per pci dss requirement ..pci dss requirements"
+5.3,"ensure that anti-virus mechanisms are actively running and cannot be disabled or altered by users, unless specifically authorized by management on a case-by-case basis for a limited time period."
+5.4,"ensure that security policies and operational procedures for protecting systems against malware are documented, in use, and known to all affected parties."
+6,develop and maintain secure systems and applications
+6.1,"establish a process to identify security vulnerabilities, using reputable outside sources for security vulnerability information, and assign a risk ranking for example, as high, medium, or low to newly discovered security vulnerabilities."
+6.2,ensure that all system components and software are protected from known vulnerabilities by installing applicable vendor- supplied security patches. install critical security patches within one month of release.
+6.3,"develop internal and external software applications including web-based administrative access to applications securely, as follows in accordance with pci dss for example, secure authentication and logging based on industry standards andor best practices. incorporating information security throughout the software-development life cycle"
+6.3.1,"remove development, test andor custom application accounts, user ids, and passwords before applications become active or are released to customers."
+6.3.2,"review custom code prior to release to production or customers in order to identify any potential coding vulnerability using either manual or automated processes to include at least the following code changes are reviewed by individuals other than the originating code author, and by individuals knowledgeable about code-review techniques and secure coding practices. code reviews ensure code is developed according to secure coding guidelines appropriate corrections are implemented prior to release. code-review results are reviewed and approved by management prior to release.continued on next pagepci dss requirements"
+6.4,follow change control processes and procedures for all changes to system components. the processes must include the following
+6.4.1,"separate developmenttest environments from production environments, and enforce the separation with access controls."
+6.4.2,separation of duties between developmenttest and production environments
+6.4.3,production data live pans are not used for testing or development
+6.4.4,removal of test data and accounts from system components before the system becomes active goes into production.
+6.4.5,change control procedures must include the following
+6.4.5.1,documentation of impact.
+6.4.5.2,documented change approval by authorized parties.
+6.4.5.3,functionality testing to verify that the change does not adversely impact the security of the system.
+6.4.5.4,back-out procedures.
+6.4.6,"upon completion of a significant change, all relevant pci dss requirements must be implemented on all new or changed systems and networks, and documentation updated as applicable."
+6.5,"address common coding vulnerabilities in software-development processes as follows train developers at least annually in up- to-date secure coding techniques, including how to avoid common coding vulnerabilities. develop applications based on secure coding guidelines."
+6.5.1,"injection flaws, particularly sql injection. also consider os command injection, ldap and xpath injection flaws as well as other injection flaws."
+6.5.2,buffer overflows
+6.5.3,insecure cryptographic storage
+6.5.4,insecure communications
+6.5.5,improper error handling
+6.5.6,all high risk vulnerabilities identified in the vulnerability identification process as defined in pci dss requirement ..
+6.5.7,cross-site scripting xss
+6.5.8,"improper access control such as insecure direct object references, failure to restrict url access, directory traversal, and failure to restrict user access to functions."
+6.5.9,cross-site request forgery csrf
+6.5.10,broken authentication and session management.
+6.6,"for public-facing web applications, address new threats and vulnerabilities on an ongoing basis and ensure these applications are protected against known attacks by either of the following methods reviewing public-facing web applications via manual or automated application vulnerability security assessment tools or methods, at least annually and after any changes"
+6.7,"ensure that security policies and operational procedures for developing and maintaining secure systems and applications are documented, in use, and known to all affected parties."
+7.1,limit access to system components and cardholder data to only those individuals whose job requires such access.
+7.1.1,"define access needs for each role, including system components and data resources that each role needs to access for their job function level of privilege required for example, user, administrator, etc. for accessing resources."
+7.1.2,restrict access to privileged user ids to least privileges necessary to perform job responsibilities.
+7.1.3,assign access based on individual personnels job classification and function.
+7.1.4,require documented approval by authorized parties specifying required privileges.
+7.2,"establish an access control systems for systems components that restricts access based on a users need to know, and is set to deny all unless specifically allowed."
+7.2.1,coverage of all system components
+7.2.2,assignment of privileges to individuals based on job classification and function.
+7.2.3,default deny-all setting.
+7.3,"ensure that security policies and operational procedures for restricting access to cardholder data are documented, in use, and known to all affected parties."
+8.1,define and implement policies and procedures to ensure proper user identification management for non- consumer users and administrators on all system components as follows
+8.1.1,assign all users a unique id before allowing them to access system components or cardholder data.
+8.1.2,"control addition, deletion, and modification of user ids, credentials, and other identifier objects."
+8.1.3,immediately revoke access for any terminated users.
+8.1.4,removedisable inactive user accounts within days.
+8.1.5,"manage ids used by third parties to access, support, or maintain system components via remote access as follows enabled only during the time period needed and disabled when not in use. monitored when in use."
+8.1.6,limit repeated access attempts by locking out the user id after not more than six attempts.
+8.1.7,set the lockout duration to a minimum of minutes or until an administrator enables the user id.
+8.1.8,"if a session has been idle for more than minutes, require the user to re-authenticate to re-activate the terminal or session."
+8.2,"in addition to assigning a unique id, ensure proper user-authentication management for non-consumer users and administrators on all system components by employing at least one of the following methods to authenticate all users something you know, such as a password or passphrase something you have, such as a token device or smart card something you are, such as a biometric.pci dss requirements"
+8.2.1,"using strong cryptography, render all authentication credentials such as passwordsphrases unreadable during transmission and storage on all system components."
+8.2.2,"verify user identity before modifying any authentication credentialfor example, performing password resets, provisioning new tokens, or generating new keys."
+8.2.3,"passwordspassphrases must meet the following require a minimum length of at least seven characters. contain both numeric and alphabetic characters.alternatively, the passwords passphrases must have complexity and strength at least equivalent to the parameters specified above."
+8.2.4,change user passwordspassphrases at least once every days.
+8.2.5,do not allow an individual to submit a new passwordpassphrase that is the same as any of the last four passwordspassphrases he or she has used.
+8.2.6,"set passwordspassphrases for first-time use and upon reset to a unique value for each user, and change immediately after the first use."
+8.3,secure all individual non-console administrative access and all remote access to the cde using multi-factor authentication.
+8.3.1,incorporate multi-factor authentication for all non-console access into the cde for personnel with administrative access.
+8.3.2,"incorporate multi-factor authentication for all remote network access both user and administrator, and including third-party access for support or maintenance originating from outside the entitys network."
+8.4,document and communicate authentication policies and procedures to all users including guidance on selecting strong authentication credentials guidance for how users should protect their authentication credentials instructions not to reuse previously used passwords instructions to change passwords if there is any suspicion the password could be compromised.
+8.5,"do not use group, shared, or generic ids, passwords, or other authentication methods as follows generic user ids are disabled or removed. shared user ids do not exist for system administration and other critical functions. shared and generic user ids are not used to administer any system components.pci dss requirements"
+8.5.1,"additional requirement for service providers only service providers with remote access to customer premises for example, for support of pos systems or servers must use a unique authentication credential such as a passwordphrase for each customer."
+8.6,"where other authentication mechanisms are used for example, physical or logical security tokens, smart cards, certificates, etc., use of these mechanisms must be assigned as follows authentication mechanisms must be assigned to an individual account and not shared among multiple accounts. physical andor logical controls must be in place to ensure only the intended account can use that mechanism to gain access.pci dss requirements"
+8.7,"all access to any database containing cardholder data including access by applications, administrators, and all other users is restricted as follows all user access to, user queries of, and user actions on databases are through programmatic methods. only database administrators have the ability to directly access or query databases. application ids for database applications can only be used by the applications and not by individual users or other non-application processes."
+8.8,"ensure that security policies and operational procedures for identification and authentication are documented, in use, and known to all affected parties."
+9.1,use appropriate facility entry controls to limit and monitor physical access to systems in the cardholder data environment.
+9.1.1,"use either video cameras or access control mechanisms or both to monitor individual physical access to sensitive areas. review collected data and correlate with other entries. store for at least three months, unless otherwise restricted by law."
+9.1.2,implement physical andor logical controls to restrict access to publicly accessible network jacks.
+9.1.3,"restrict physical access to wireless access points, gateways, handheld devices, networkingcommunications hardware, and telecommunication lines."
+9.2,"develop procedures to easily distinguish between onsite personnel and visitors, to include identifying onsite personnel and visitors for example, assigning badges changes to access requirements revoking or terminating onsite personnel and expired visitor identification such as id badges."
+9.3,"control physical access for onsite personnel to sensitive areas as follows access must be authorized and based on individual job function. access is revoked immediately upon termination, and all physical access mechanisms, such as keys, access cards, etc., are returned or disabled.pci dss requirements"
+9.4,implement procedures to identify and authorize visitors.
+9.4.1,"visitors are authorized before entering, and escorted at all times within, areas where cardholder data is processed or maintained."
+9.4.2,visitors are identified and given a badge or other identification that expires and that visibly distinguishes the visitors from onsite personnel.
+9.4.3,visitors are asked to surrender the badge or identification before leaving the facility or at the date of expiration.
+9.4.4,a visitor log is used to maintain a physical audit trail of visitor activity to the facility as well as computer rooms and data centers where cardholder data is stored or transmitted.
+9.5,physically secure all media.
+9.5.1,"store media backups in a secure location, preferably an off-site facility, such as an alternate or backup site, or a commercial storage facility. review"
+9.6,"maintain strict control over the internal or external distribution of any kind of media, including the following"
+9.6.1,classify media so the sensitivity of the data can be determined.
+9.6.2,send the media by secured courier or other delivery method that can be accurately tracked.
+9.6.3,ensure management approves any and all media that is moved from a secured area including when media is distributed to individuals.
+9.7,maintain strict control over the storage and accessibility of media.
+9.7.1,properly maintain inventory logs of all media and conduct media inventories at least annually.
+9.8,destroy media when it is no longer needed for business or legal reasons as follows
+9.8.1,"shred, incinerate, or pulp hard- copy materials so that cardholder data cannot be reconstructed. secure storage containers used for materials that are to be destroyed."
+9.8.2,render cardholder data on electronic media unrecoverable so that cardholder data cannot be reconstructed.
+9.9,protect devices that capture payment card data via direct physical interaction with the card from tampering and substitution.
+9.9.1,"maintain an up-to-date list of devices. the list should include the following make, model of device location of device for example, the address of the site or facility where the device is located device serial number or other method of unique identification.pci dss requirements"
+9.9.2,"periodically inspect device surfaces to detect tampering for example, addition of card skimmers to devices, or substitution for example, by checking the serial number or other device characteristics to verify it has not been swapped with a fraudulent device."
+9.9.3,"provide training for personnel to be aware of attempted tampering or replacement of devices. training should include the following verify the identity of any third-party persons claiming to be repair or maintenance personnel, prior to granting them access to modify or troubleshoot devices. do not install, replace, or return devices without verification. be aware of suspicious behavior around devices for example, attempts by unknown persons to unplug or open devices. report suspicious behavior and indications of device tampering or substitution to appropriate personnel for example, to a manager or security officer."
+9.10,"ensure that security policies and operational procedures for restricting physical access to cardholder data are documented, in use, and known to all affected parties."
+10.1,implement audit trails to link all access to system components to each individual user.
+10.2,implement automated audit trails for all system components to reconstruct the following events
+10.2.1,all individual user accesses to cardholder data
+10.2.2,all actions taken by any individual with root or administrative privileges
+10.2.3,access to all audit trails
+10.2.4,invalid logical access attempts
+10.2.5,"use of and changes to identification and authentication mechanismsincluding but not limited to creation of new accounts and elevation of privilegesand all changes, additions, or deletions to accounts with root or administrative privileges"
+10.2.6,"initialization, stopping, or pausing of the audit logs"
+10.2.7,creation and deletion of system- level objects
+10.3,record at least the following audit trail entries for all system components for each event
+10.3.1,user identification
+10.3.2,type of event
+10.3.3,date and time
+10.3.4,success or failure indication
+10.3.5,origination of event
+10.3.6,"identity or name of affected data, system component, or resource."
+10.4,"using time-synchronization technology, synchronize all critical system clocks and times and ensure that the following is implemented for acquiring, distributing, and storing time."
+10.4.1,critical systems have the correct and consistent time.
+10.4.2,time data is protected.
+10.4.3,time settings are received from industry-accepted time sources.
+10.5,secure audit trails so they cannot be altered.
+10.5.1,limit viewing of audit trails to those with a job-related need.
+10.5.2,protect audit trail files from unauthorized modifications.
+10.5.3,promptly back up audit trail files to a centralized log server or media that is difficult to alter.
+10.5.4,"write logs for external-facing technologies onto a secure, centralized, internal log server or media device."
+10.5.5,use file-integrity monitoring or change-detection software on logs to ensure that existing log data cannot be changed without generating alerts although new data being added should not cause an alert.
+10.6,review logs and security events for all system components to identify anomalies or suspicious activity.
+10.6.1,"review the following at least daily all security events logs of all system components that store, process, or transmit chd andor sad logs of all critical system components logs of all servers and system components that perform security functions for example, firewalls, intrusion-detection systemsintrusion-prevention systems idsips, authentication servers, e-commerce redirection servers, etc.."
+10.6.2,"review logs of all other system components periodically based on the organizations policies and risk management strategy, as determined by the organizations annual risk assessment."
+10.6.3,follow up exceptions and anomalies identified during the review process.
+10.7,"retain audit trail history for at least one year, with a minimum of three months immediately available for analysis for example, online, archived, or restorable from backup."
+10.8,"additional requirement for service providers only implement a process for the timely detection and reporting of failures of critical security control systems, including but not limited to failure of firewalls idsips fim anti-virus physical access controls logical access controls audit logging mechanisms segmentation controls if used"
+10.8.1,"additional requirement for service providers only respond to failures of any critical security controls in a timely manner. processes for responding to failures in security controls must include restoring security functions identifying and documenting the duration date and time start to end of the security failure identifying and documenting causes of failure, including root cause, and documenting remediation required to address root cause identifying and addressing any security issues that arose during the failure performing a risk assessment to determine whether further actions are required as a result of the security failure implementing controls to prevent cause of failure from reoccurring resuming monitoring of security controls"
+10.9,"ensure that security policies and operational procedures for monitoring all access to network resources and cardholder data are documented, in use, and known to all affected parties."
+11.1,"implement processes to test for the presence of wireless access points ., and detect and identify all authorized and unauthorized wireless access points on a quarterly basis."
+11.1.1,maintain an inventory of authorized wireless access points including a documented business justification.
+11.1.2,implement incident response procedures in the event unauthorized wireless access points are detected.
+11.2,"run internal and external network vulnerability scans at least quarterly and after any significant change in the network such as new system component installations, changes in network topology, firewall rule modifications, product upgrades."
+11.2.1,perform quarterly internal vulnerability scans. address vulnerabilities and perform rescans to verify all high risk vulnerabilities are resolved in accordance with the entitys vulnerability ranking per requirement .. scans must be performed by qualified personnel.
+11.2.2,"perform quarterly external vulnerability scans, via an approved scanning vendor asv approved by the payment card industry security standards council pci ssc. perform rescans as needed, until passing scans are achieved."
+11.2.3,"perform internal and external scans, and rescans as needed, after any significant change. scans must be performed by qualified personnel."
+11.3,"implement a methodology for penetration testing that includes the following is based on industry-accepted penetration testing approaches for example, nist sp- includes coverage for the entire cde perimeter and critical systems includes testing from both inside and outside the network includes testing to validate any segmentation and scope-reduction controls defines application-layer penetration tests to include, at a minimum, the vulnerabilities listed in requirement . defines network-layer penetration tests to include components that support network functions as well as operating systems includes review and consideration of threats and vulnerabilities experienced in the last months specifies retention of penetration testing results and remediation activities results.pci dss requirements"
+11.3.1,"perform external penetration testing at least annually and after any significant infrastructure or application upgrade or modification such as an operating system upgrade, a sub-network added to the environment, or a web server added to the environment."
+11.3.2,"perform internal penetration testing at least annually and after any significant infrastructure or application upgrade or modification such as an operating system upgrade, a sub-network added to the environment, or a web server added to the environment."
+11.3.3,exploitable vulnerabilities found during penetration testing are corrected and testing is repeated to verify the corrections.
+11.3.4,"if segmentation is used to isolate the cde from other networks, perform penetration tests at least annually and after any changes to segmentation controlsmethods to verify that the segmentation methods are operational and effective, and isolate all out-of-scope systems from systems in the cde."
+11.3.4.1,"additional requirement for service providers only if segmentation is used, confirm pci dss scope by performing penetration testing on segmentation controls at least every six months and after any changes to segmentation controlsmethods."
+11.4,"use intrusion-detection andor intrusion-prevention techniques to detect andor prevent intrusions into the network. monitor all traffic at the perimeter of the cardholder data environment as well as at critical points in the cardholder data environment, and alert personnel to suspected compromises."
+11.5,"deploy a change-detection mechanism for example, file-integrity monitoring tools to alert personnel to unauthorized modification including changes, additions, and deletions of critical system files, configuration files, or content files and configure the software to perform critical file comparisons at least weekly."
+11.5.1,implement a process to respond to any alerts generated by the change- detection solution.
+11.6,"ensure that security policies and operational procedures for security monitoring and testing are documented, in use, and known to all affected parties."
+12.1,"establish, publish, maintain, and disseminate a security policy."
+12.1.1,review the security policy at least annually and update the policy when the environment changes.
+12.2,"implement a risk-assessment process that is performed at least annually and upon significant changes to the environment for example, acquisition, merger, relocation, etc., identifies critical assets, threats, and vulnerabilities, and results in a formal, documented analysis of risk.examples of risk-assessment methodologies include but are not limited to octave, iso and nist sp -.pci dss requirements"
+12.3,develop usage policies for critical technologies and define proper use of these technologies.
+12.3.1,explicit approval by authorized parties
+12.3.2,authentication for use of the technology
+12.3.3,a list of all such devices and personnel with access
+12.3.4,"a method to accurately and readily determine owner, contact information, and purpose for example, labeling, coding, andor inventorying of devices"
+12.3.5,acceptable uses of the technology
+12.3.6,acceptable network locations for the technologies
+12.3.7,list of company-approved products
+12.3.8,automatic disconnect of sessions for remote-access technologies after a specific period of inactivity
+12.3.9,"activation of remote-access technologies for vendors and business partners only when needed by vendors and business partners, with immediate deactivation after use"
+12.3.10,"for personnel accessing cardholder data via remote-access technologies, prohibit the copying, moving, and storage of cardholder data onto local hard drives and removable electronic media, unless explicitly authorized for a defined business need."
+12.4,ensure that the security policy and procedures clearly define information security responsibilities for all personnel.
+12.4.1,additional requirement for service providers only executive management shall establish responsibility for the protection of cardholder data and a pci dss compliance program to include overall accountability for maintaining pci dss compliance defining a charter for a pci dss compliance program and communication to executive management
+12.5,assign to an individual or team the following information security management responsibilities
+12.5.1,"establish, document, and distribute security policies and procedures."
+12.5.2,"monitor and analyze security alerts and information, and distribute to appropriate personnel."
+12.5.3,"establish, document, and distribute security incident response and escalation procedures to ensure timely and effective handling of all situations."
+12.5.4,"administer user accounts, including additions, deletions, and modifications."
+12.5.5,monitor and control all access to data.
+12.6,implement a formal security awareness program to make all personnel aware of the cardholder data security policy and procedures.
+12.6.1,educate personnel upon hire and at least annually.
+12.6.2,require personnel to acknowledge at least annually that they have read and understood the security policy and procedures.
+12.7,"screen potential personnel prior to hire to minimize the risk of attacks from internal sources. examples of background checks include previous employment history, criminal record, credit history, and reference checks."
+12.8,"maintain and implement policies and procedures to manage service providers with whom cardholder data is shared, or that could affect the security of cardholder data, as follows pci dss requirements"
+12.8.1,maintain a list of service providers including a description of the service provided.
+12.8.2,"maintain a written agreement that includes an acknowledgement that the service providers are responsible for the security of cardholder data the service providers possess or otherwise store, process or transmit on behalf of the customer, or to the extent that they could impact the security of the customers cardholder data environment."
+12.8.3,ensure there is an established process for engaging service providers including proper due diligence prior to engagement.
+12.8.4,maintain a program to monitor service providers pci dss compliance status at least annually.
+12.8.5,"maintain information about which pci dss requirements are managed by each service provider, and which are managed by the entity."
+12.9,"additional requirement for service providers only service providers acknowledge in writing to customers that they are responsible for the security of cardholder data the service provider possesses or otherwise stores, processes, or transmits on behalf of the customer, or to the extent that they could impact the security of the customers cardholder data environment."
+12.10,implement an incident response plan. be prepared to respond immediately to a system breach.
+12.10.1,"create the incident response plan to be implemented in the event of system breach. ensure the plan addresses the following, at a minimum roles, responsibilities, and communication and contact strategies in the event of a compromise including notification of the payment brands, at a minimum specific incident response procedures business recovery and continuity procedures data backup processes analysis of legal requirements for reporting compromises coverage and responses of all critical system components reference or inclusion of incident response procedures from the payment brands."
+12.10.2,"review and test the plan, including all elements listed in requirement .., at least annually."
+12.10.3,designate specific personnel to be available on a basis to respond to alerts.
+12.10.4,provide appropriate training to staff with security breach response responsibilities.
+12.10.5,"include alerts from security monitoring systems, including but not limited to intrusion-detection, intrusion-prevention, firewalls, and file-integrity monitoring systems."
+12.10.6,develop a process to modify and evolve the incident response plan according to lessons learned and to incorporate industry developments.
+12.11,additional requirement for service providers only perform reviews at least quarterly to confirm personnel are following security policies and operational procedures. reviews must cover the following processes daily log reviews firewall rule-set reviews applying configuration standards to new systems responding to security alerts change management processes
+12.11.1,additional requirement for service providers only maintain documentation of quarterly review process to include documenting results of the reviews review and sign-off of results by personnel assigned responsibility for the pci dss compliance program
+A1,ensure that each entity only runs processes that have access to that entitys cardholder data environment. restrict each entitys access and privileges to its own cardholder data environment only. ensure logging and audit trails are enabled and unique to each entitys cardholder data environment and consistent with pci dss requirement . enable processes to provide for timely forensic investigation in the event of a compromise to any hosted merchant or service provider.
+A1.1,ensure that each entity only runs processes that have access to that entitys cardholder data environment.
+A1.2,restrict each entitys access and privileges to its own cardholder data environment only.
+A1.3,ensure logging and audit trails are enabled and unique to each entitys cardholder data environment and consistent with pci dss requirement .
+A1.4,enable processes to provide for timely forensic investigation in the event of a compromise to any hosted merchant or service provider.
+A2.1,"where pos poi terminals and the ssltls termination points to which they connect use ssl andor early tls, the entity must either confirm the devices are not susceptible to any known exploits for those protocols.or have a formal risk mitigation and migration plan in place."
+A2.2,entities with existing implementations other than as allowed in a. that use ssl andor early tls must have a formal risk mitigation and migration plan in place.
+A2.3,"additional requirement for service providers only all service providers must provide a secure service offering by june , ."
+A3.1,implement a pci dss compliance program
+A3.2,document and validate pci dss scope
+A3.3,validate pci dss is incorporated into business-as-usual bau activities
+A3.1.1,"executive management shall establish responsibility for the protection of cardholder data and a pci dss compliance program to include overall accountability for maintaining pci dss compliance defining a charter for a pci dss compliance program providing updates to executive management and board of directors on pci dss compliance initiatives and issues, including remediation activities, at least annuallypci dss reference requirement"
+A3.1.2,"a formal pci dss compliance program must be in place to include definition of activities for maintaining and monitoring overall pci dss compliance, including business-as-usual activities annual pci dss assessment processes processes for the continuous validation of pci dss requirements for example daily, weekly, quarterly, etc. as applicable per requirement a process for performing business-impact analysis to determine potential pci dss impacts for strategic business decisionspci dss reference requirements -a requirements"
+A3.1.3,"pci dss compliance roles and responsibilities must be specifically defined and formally assigned to one or more personnel, including at least the following managing pci dss business-as-usual activities managing annual pci dss assessments managing continuous validation of pci dss requirements for example daily, weekly, quarterly, etc. as applicable per requirement managing business-impact analysis to determine potential pci dss impacts for strategic business decisionspci dss reference requirement a requirements"
+A3.1.4,provide up-to-date pci dss andor information security training at least annually to personnel with pci dss compliance responsibilities as identified in a...
+A3.2.1,"document and confirm the accuracy of pci dss scope at least quarterly and upon significant changes to the in-scope environment. at a minimum, the quarterly scoping validation should include identifying all in-scope networks and system components identifying all out-of-scope networks and justification for networks being out of scope, including descriptions of all segmentation controls implemented identifying all connected entitiese.g., third-party entities with access to the cardholder data environment cdepci dss reference scope of pci dss requirements"
+A3.2.2,"determine pci dss scope impact for all changes to systems or networks, including additions of new systems and new network connections. processes must include performing a formal pci dss impact assessment identifying applicable pci dss requirements to the system or network updating pci dss scope as appropriate documented sign-off of the results of the impact assessment by responsible personnel as defined in a..pci dss reference scope of pci dss requirements requirements -a requirements"
+A3.2.2.1,"upon completion of a change, all relevant pci dss requirements must be verified on all new or changed systems and networks, and documentation must be updated as applicable. examples of pci dss requirements that should be verified include, but are not limited to network diagram is updated to reflect changes. systems are configured per configuration standards, with all default passwords changed and unnecessary services disabled. systems are protected with required controlse.g., file-integrity monitoring fim, anti-virus, patches, audit logging. verify that sensitive authentication data sad is not stored and that all cardholder data chd storage is documented and incorporated into data- retention policy and procedures new systems are included in the quarterly vulnerability scanning process.pci dss reference scope of pci dss requirements requirement -a requirements"
+A3.2.3,"changes to organizational structure for example, a company merger or acquisition, change or reassignment of personnel with responsibility for security controlsresult in a formal internal review of the impact to pci dss scope and applicability of controls."
+A3.2.4,"if segmentation is used, confirm pci dss scope by performing penetration testing on segmentation controls at least every six months and after any changes to segmentation controlsmethods."
+A3.2.5,implement a data-discovery methodology to confirm pci dss scope and to locate all sources and locations of clear-text pan at least quarterly and upon significant changes to the cardholder environment or processes.
+A3.2.5.1,"ensure effectiveness of methods used for data discoverye.g., methods must be able to discover clear-text pan on all types of system components for example, on each operating system or platform and file formats in use."
+A3.2.5.2,"implement response procedures to be initiated upon the detection of clear-text pan outside of the cde to include procedures for determining what to do if clear-text pan is discovered outside of the cde, including its retrieval, secure deletion andor migration into the currently defined cde, as applicable procedures for determining how the data ended up outside of the cde procedures for remediating data leaks or process gaps that resulted in the data being outside of the cde procedures for identifying the source of the data procedures for identifying whether any track data is stored with the pans"
+A3.2.6,"implement mechanisms for detecting and preventing clear-text pan from leaving the cde via an unauthorized channel, method, or process, including generation of audit logs and alerts."
+A3.2.6.1,"implement response procedures to be initiated upon the detection of attempts to remove clear-text pan from the cde via an unauthorized channel, method, or process. response procedures must include procedures for the timely investigation of alerts by responsible personnel procedures for remediating data leaks or process gaps, as necessary, to prevent any data loss"
+A3.3.1,"implement a process to immediately detect and alert on critical security control failures. examples of critical security controls include, but are not limited to firewalls idsips fim anti-virus physical access controls logical access controls audit logging mechanisms segmentation controls if usedpci dss reference requirements -a requirements"
+A3.3.1.1,respond to failures of any critical security controls in a timely manner.
+A3.3.2,"review hardware and software technologies at least annually to confirm whether they continue to meet the organizations pci dss requirements. for example, a review of technologies that are no longer supported by the vendor andor no longer meet the security needs of the organization."
+A3.3.3,"perform reviews at least quarterly to verify bau activities are being followed. reviews must be performed by personnel assigned to the pci dss compliance program as identified in a.., and include the following confirmation that all bau activities e.g., a.., a.., and a.. are being performed confirmation that personnel are following security policies and operational procedures for example, daily log reviews, firewall rule-set reviews, configuration standards for new systems, etc. documenting how the reviews were completed, including how all bau activities were verified as being in place. collection of documented evidence as required for the annual pci dss assessment review and sign-off of results by personnel assigned responsibility for the pci dss compliance program as identified in a.. retention of records and documentation for at least months, covering all bau activitiespci dss reference requirements -a requirements"
+A3.4,control and manage logical access to the cardholder data environment
+A3.4.1,"review user accounts and access privileges to in-scope system components at least every six months to ensure user accounts and access remain appropriate based on job function, and authorized."
+A3.5,identify and respond to suspicious events
+A3.5.1,"implement a methodology for the timely identification of attack patterns and undesirable behavior across systemsfor example, using coordinated manual reviews andor centrally managed or automated log- correlation toolsto include at least the following identification of anomalies or suspicious activity as it occurs issuance of timely alerts upon detection of suspicious activity or anomaly to responsible personnel response to alerts in accordance with documented response procedurespci dss reference requirements ,"

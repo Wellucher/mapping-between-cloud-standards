@@ -1,0 +1,157 @@
+ID,TEXT
+00.a,"an information security management program ismp shall be defined in terms of the characteristics of the business, and established and managed including monitoring, maintenance and improvement."
+01.a,"an access control policy shall be established, documented, and reviewed based on business and security requirements for access."
+01.b,there shall be a formal documented and implemented user registration and de-registration procedure for granting and revoking access.
+01.c,"the allocation and use of privileges to information systems and services shall be restricted and controlled. special attention shall be given to the allocation of privileged access rights, which allow users to override system controls."
+01.d,passwords shall be controlled through a formal management process.
+01.e,all access rights shall be regularly reviewed by management via a formal documented process.
+01.f,users shall be made aware of their responsibilities for maintaining effective access controls and shall be required to follow good security practices in the selection and use of passwords and security of equipment.
+01.g,users shall ensure that unattended equipment has appropriate protection.
+01.h,a clear desk policy for papers and removable storage media and a clear screen policy for information assets shall be adopted.
+01.i,users shall only be provided with access to internal and external network services that they have been specifically authorized to use. authentication and authorization mechanisms shall be applied for users and equipment.
+01.j,appropriate authentication methods shall be used to control access by remote users.
+01.k,automatic equipment identification shall be used as a means to authenticate connections from specific locations and equipment.
+01.l,physical and logical access to diagnostic and configuration ports shall be controlled.
+01.m,"groups of information services, users, and information systems should be segregated on networks."
+01.n,"for shared networks, especially those extending across the organizations boundaries, the capability of users to connect to the network shall be restricted, in line with the access control policy and requirements of the business applications."
+01.o,routing controls shall be implemented for networks to ensure that computer connections and information flows do not breach the access control policy of the business applications.
+01.p,access to operating systems shall be controlled by a secure log-on procedure.
+01.q,"all users shall have a unique identifier user id for their personal use only, and an authentication technique shall be implemented to substantiate the claimed identity of a user."
+01.r,systems for managing passwords shall be interactive and shall ensure quality passwords.
+01.s,the use of utility programs that might be capable of overriding system and application controls shall be restricted and tightly controlled.
+01.t,inactive sessions shall shut down after a defined period of inactivity.
+01.u,restrictions on connection times shall be used to provide additional security for high-risk applications.
+01.v,logical and physical access to information and application systems and functions by users and support personnel shall be restricted in accordance with the defined access control policy.
+01.w,sensitive systems shall have a dedicated and isolated computing environment.
+01.x,"a formal policy shall be in place, and appropriate security measures shall be adopted to protect against the risks of using mobile computing and communication devices."
+01.y,"a policy, operational plans and procedures shall be developed and implemented for teleworking activities."
+02.a,"security roles and responsibilities of employees, contractors and third-party users shall be defined and documented in accordance with the organizations information security policy."
+02.b,"background verification checks on all candidates for employment, contractors, and third-party users shall be carried out in accordance with relevant laws, regulations and ethics, and proportional to the business requirements, the classification of the information to be accessed, and the perceived risks."
+02.c,"as part of their contractual obligation, employees, contractors, and third-party users shall agree and sign the terms and conditions of their employment contract, which shall include their responsibilities for information security."
+02.d,"management shall require employees, and where applicable, contractors and third-party users, to apply security in accordance with established policies and procedures of the organization."
+02.e,"all employees of the organization and contractors and third-party users shall receive appropriate awareness training and regular updates in organizational policies and procedures, as relevant for their job function."
+02.f,there shall be a formal disciplinary process for employees who have violated security policies and procedures.
+02.g,responsibilities for performing employment termination or change of employment shall be clearly defined and assigned.
+02.h,"all employees, contractors, and third-party users shall return all of the organizations assets in their possession upon termination of their employment, contract, or agreement."
+02.i,"the access rights of all employees, contractors, and third-party users to information and information assets shall be removed upon termination of their employment, contract or agreement, or adjusted upon a change of employment i.e. upon transfer within the organization."
+03.a,organizations shall develop and maintain a risk management program to manage risk to an acceptable level.
+03.b,risk assessments shall be performed to identify and quantify risks.
+03.c,risks shall be mitigated to an acceptable level.
+03.d,risks shall be continually evaluated and assessed.
+04.a,"information security policy documents shall be approved by management, and published and communicated to all employees and relevant external parties. information security policy documents shall establish the direction of the organization and align to best practices, regulatory, federalstate and international laws where applicable. the information security policy documents shall be supported by a strategic plan and a security program with well-defined roles and responsibilities for leadership and officer roles."
+04.b,the information security policy documents shall be reviewed at planned intervals or if significant changes occur to ensure its continuing adequacy and effectiveness.
+05.a,"management shall actively support security within the organization through clear direction, demonstrated commitment, explicit assignment, and acknowledgment of information security responsibilities."
+05.b,information security activities shall be coordinated by representatives from different parts of the organization with relevant roles and job functions.
+05.c,all information security responsibilities shall be clearly defined.
+05.d,"a management authorization process for new information assets e.g. systems and applications see other information, and facilities e.g. data centers or offices where covered information is to be processed shall be defined and implemented."
+05.e,requirements for confidentiality or non-disclosure agreements reflecting the organizations needs for the protection of information shall be identified and regularly reviewed.
+05.f,appropriate contacts with relevant authorities shall be maintained.
+05.g,appropriate contacts with special interest groups or other specialist security forums and professional associations shall be maintained.
+05.h,"the organizations approach to managing information security and its implementation control objectives, controls, policies, processes, and procedures for information security shall be reviewed independently at planned intervals, at a minimum annually, or when significant changes to the security implementation occur."
+05.i,"the risks to the organizations information and information assets from business processes involving external parties shall be identified, and appropriate controls implemented before granting access."
+05.j,all identified security requirements shall be addressed before giving customers access to the organizations information or assets.
+05.k,"agreements with third-parties involving accessing, processing, communicating or managing the organizations information or information assets, or adding products or services to information assets shall cover all relevant security requirements."
+06.a,"all relevant statutory, regulatory, and contractual requirements and the organizations approach to meet these requirements shall be explicitly defined, documented, and kept up to date for each information system and the organization."
+06.b,"detailed procedures shall be implemented to ensure compliance with legislative, regulatory, and contractual requirements on the use of material in respect of which there may be intellectual property rights, and on the use of proprietary software products."
+06.c,"important records shall be protected from loss, destruction, and falsification, in accordance with statutory, regulatory, contractual, and business requirements."
+06.d,"data protection and privacy shall be ensured as required in relevant legislation, regulations, and contractual clauses."
+06.e,users shall be deterred from using information assets for unauthorized purposes.
+06.f,"cryptographic controls shall be used in compliance with all relevant agreements, laws, and regulations."
+06.g,managers shall ensure that all security procedures within their area of responsibility are carried out correctly to achieve compliance with security policies and standards.
+06.h,information systems shall be regularly checked for compliance with security implementation standards.
+06.i,"audit requirements and activities involving checks on operational systems shall be carefully planned and agreed to, to minimize the risk of disruptions to business processes."
+06.j,access to information systems audit tools shall be protected to prevent any possible misuse or compromise.
+07.a,all assets including information shall be clearly identified and an inventory of all assets drawn up and maintained.
+07.b,all information and assets associated with information processing systems shall be owned by a designated part of the organization.
+07.c,"rules for the acceptable use of information and assets associated with information processing systems shall be identified, documented, and implemented."
+07.d,"information shall be classified in terms of its value, legal requirements, sensitivity, and criticality to the organization."
+07.e,an appropriate set of procedures for information labeling and handling shall be developed and implemented in accordance with the classification scheme adopted by the organization.
+08.a,"security perimeters barriers such as walls, card controlled entry gates or manned reception desks shall be used to protect areas that contain information and information assets."
+08.b,secure areas shall be protected by appropriate entry controls to ensure that only authorized personnel are allowed access.
+08.c,"physical security for offices, rooms, and facilities shall be designed and applied."
+08.d,"physical protection against damage from fire, flood, earthquake, explosion, civil unrest, and other forms of natural or man-made disaster shall be designed and applied."
+08.e,physical protection and guidelines for working in secure areas shall be designed and applied.
+08.f,"access points such as delivery and loading areas and other points where unauthorized persons may enter the premises shall be controlled and, if possible, isolated from information processing facilities to avoid unauthorized access."
+08.g,"equipment shall be sited or protected to reduce the risks from environmental threats and hazards, and opportunities for unauthorized access."
+08.h,equipment shall be protected from power failures and other disruptions caused by failures in supporting utilities.
+08.i,power and telecommunications cabling carrying data or supporting information services shall be protected from interception or damage.
+08.j,equipment shall be correctly maintained to ensure its continued availability and integrity.
+08.k,security shall be applied to off-site equipment taking into account the different risks of working outside the organizations premises.
+08.l,all items of equipment containing storage media shall be checked to ensure that any covered information and licensed software has been removed or securely overwritten prior to disposal.
+08.m,"equipment, information or software shall not be taken off site without prior authorization."
+09.a,"operating procedures shall be documented, maintained, and made available to all users who need them."
+09.aa,"audit logs recording user activities, exceptions, and information security events shall be produced and kept for an agreed period to assist in future investigations and access control monitoring."
+09.ab,procedures for monitoring use of information processing systems and facilities shall be established to check for use and effectiveness of implemented controls. the results of the monitoring activities shall be reviewed regularly.
+09.ac,logging systems and log information shall be protected against tampering and unauthorized access.
+09.ad,system administrator and system operator activities shall be logged and regularly reviewed.
+09.ae,"faults shall be logged, analyzed, and appropriate remediation action taken."
+09.af,the clocks of all relevant information processing systems within the organization or security domain shall be synchronized with an agreed accurate time source to support tracing and reconstitution of activity timelines.
+09.b,changes to information assets and systems shall be controlled and archived.
+09.c,separation of duties shall be enforced to reduce opportunities for unauthorized or unintentional modification or misuse of the organizations assets.
+09.d,"development, test, and operational environments shall be separated and controlled to reduce the risks of unauthorized access or changes to the operational system."
+09.e,"it shall be ensured that the security controls, service definitions and delivery levels included in the third party service delivery agreement are implemented, operated and maintained by the third party."
+09.f,"the services, reports and records provided by the third party shall be regularly monitored and reviewed, and audits shall be carried out regularly to govern and maintain compliance with the service delivery agreements."
+09.g,"changes to the provision of services, including maintaining and improving existing information security policies, procedures and controls, shall be managed, taking account of the criticality of business systems and processes involved and re-assessment of risks."
+09.h,"the availability of adequate capacity and resources shall be planned, prepared, and managed to deliver the required system performance. projections of future capacity requirements shall be made to mitigate the risk of system overload."
+09.i,"acceptance criteria for new information systems, upgrades, and new versions shall be established and suitable tests of the systems carried out during development and prior to acceptance to maintain security."
+09.j,"detection, prevention, and recovery controls shall be implemented to protect against malicious code, and appropriate user awareness procedures on malicious code shall be provided."
+09.k,"mobile code shall be authorized before its installation and use, and the configuration shall ensure that the authorized mobile code operates according to a clearly defined security policy. all unauthorized mobile code shall be prevented from executing."
+09.l,back-up copies of information and software shall be taken and tested regularly.
+09.m,"networks shall be managed and controlled in order to protect the organization from threats and to maintain security for the systems and applications using the network, including information in transit."
+09.n,"security features, service levels, and management requirements of all network services shall be identified and included in any network services agreement, whether these services are provided in-house or outsourced."
+09.o,formal procedures shall be documented and implemented for the management of removable media.
+09.p,"media shall be disposed of securely and safely when no longer required, using formal procedures that are documented."
+09.q,procedures for the handling and storage of information shall be established to protect this information from unauthorized disclosure or misuse.
+09.r,system documentation shall be protected against unauthorized access.
+09.s,"formal exchange policies, procedures, and controls shall be in place to protect the exchange of information through the use of all types of communication mediums."
+09.t,agreements shall be established and implemented for the exchange of information and software between the organization and external parties.
+09.u,"media containing information shall be protected against unauthorized access, misuse or corruption during transportation beyond the organizations physical boundaries."
+09.v,information involved in electronic messaging shall be appropriately protected.
+09.w,policies and procedures shall be developed and implemented to protect information associated with the interconnection of business information systems.
+09.x,"information involved in electronic commerce passing over public networks shall be protected from fraudulent activity, contract dispute, and unauthorized disclosure or modification."
+09.y,"information involved in online transactions shall be protected to prevent incomplete transmission, misrouting, unauthorized message alteration, unauthorized disclosure, unauthorized message duplication or replay."
+09.z,the integrity of information being made available on a publicly available system shall be protected to prevent unauthorized modification.
+10.a,"statements of business requirements for new information systems developed or purchased, or enhancements to existing information systems shall specify the requirements for security controls."
+10.b,data input to applications and databases shall be validated to ensure that this data is correct and appropriate.
+10.c,validation checks shall be incorporated into applications to detect any corruption of information through processing errors or deliberate acts.
+10.d,requirements for ensuring authenticity and protecting message integrity in applications shall be identified and controls implemented.
+10.e,data output from an application shall be validated to ensure that the processing of stored information is correct and appropriate to the circumstances.
+10.f,"a policy on the use of cryptographic controls for protection of information shall be developed and implemented, and supported by formal procedures."
+10.g,key management shall be in place to support the organizations use of cryptographic techniques.
+10.h,there shall be procedures in place to control the installation of software on operational systems.
+10.i,"test data shall be selected carefully, and protected and controlled in non-production environments."
+10.j,access to program source code shall be restricted.
+10.k,"the implementation of changes, including patches, service packs, and other updates and modifications, shall be controlled by the use of formal change control procedures."
+10.l,outsourced software development shall be supervised and monitored by the organization.
+10.m,timely information about technical vulnerabilities of information systems being used shall be obtained the organizations exposure to such vulnerabilities evaluated and appropriate measures taken to address the associated risk.
+11.a,"information security events shall be reported through appropriate communications channels as quickly as possible. all employees, contractors and third-party users shall be made aware of their responsibility to report any information security events as quickly as possible."
+11.b,"all employees, contractors, and third-party users of information systems and services shall be required to note and report any observed or suspected security weaknesses in systems or services."
+11.c,"management responsibilities and procedures shall be established to ensure a quick, effective, and orderly response to information security incidents."
+11.d,"there shall be mechanisms in place to enable the types, volumes, and costs of information security incidents to be quantified and monitored."
+11.e,"where a follow-up action against a person or organization after an information security incident involves legal action either civil or criminal, evidence shall be collected, retained, and presented in support of potential legal action in accordance with the rules for evidence in the relevant jurisdictions."
+12.a,a managed program and process shall be developed and maintained for business continuity throughout the organization that addresses the information security requirements needed for the organizations business continuity.
+12.b,"events that can cause interruptions to business processes shall be identified, along with the probability and impact of such interruptions and their consequences for information security."
+12.c,"plans shall be developed and implemented to maintain or restore operations and ensure availability of information, at the required level and in the required time scales, following interruption to, or failure of, critical business processes."
+12.d,"a single framework of business continuity plans shall be maintained to ensure all plans are consistent, to consistently address information security requirements, and to identify priorities for testing and maintenance."
+12.e,"business continuity plans shall be tested and updated regularly, at a minimum annually, to ensure that they are up to date and effective."
+13.a,"data subjects have a right to adequate and easily accessible notice of the use and disclosures of their pii that may be made by the pii controller, and of the data subjects rights and the contollers legal duties with respect to pii."
+13.b,"to provide data subjects with clear and easily accessible information about the pii controllers policies, procedures and practices with respect to the handling of pii."
+13.c,"to ensure that disclosures of pii, especially to third-parties, are recorded. to ensure the pii processor notifies the pii controller of any legally binding requests for disclosure of pii. provisions for the use of subcontractors to process pii should be specified in the contract between the pii processor and the pii controller."
+13.d,"to make data subjects active participants in the decision-making process regarding the processing of their pii, except as otherwise limited by legislation and regulations, through the exercise of meaningful, informed and freely given consent."
+13.e,"to present to data subjects, where appropriate and feasible, the choice not to allow the processing of their pii, to refuse or withdraw consent or to oppose a specific type of processing, and to explain to data subjects the implications of granting or refusing consent."
+13.f,to give data subjects the ability to access and review their pii and to challenge its accuracy and completeness.
+13.g,to ensure that the purposes for processing pii complies with applicable laws and relies on a permissible legal ground.
+13.h,to specify the purposes for which pii are collected no later than at the time of pii collection where feasible and limit the subsequence use to the fulfillment of original purposes.
+13.i,to limit the collection of pii to that which is within the boundaries of applicable law and strictly necessary for the specified purposes.
+13.j,to minimize the pii which is processed to what is strictly necessary for the legitimate interest pursued by the pii controller and to limit the disclosure of pii to a minimum number of internal and external parties.
+13.k,"to limit the use and disclosure of pii for specific, explicit and legitimate purposes and to fulfill the stated purposes or to abide by applicable laws."
+13.l,to retain pii no longer than necessary to fulfill the stated purposes or to abide by applicable laws.
+13.m,"to ensure that the pii processed is accurate, complete, up-to-date, adequate and relevant for the purpose of use."
+13.n,"to provide any amendment, correction or removal to pii processors and third parties to whom personal data had been disclosed."
+13.o,to set up efficient internal complaint handling and redress procedures for use by data subjects.
+13.p,to establish efficient governance for pii processing.
+13.q,to establish a privacy impact assessment process and to perform a privacy impact assessment as necessary.
+13.r,"to ensure, through contractual or other means, that third party recipients provide at least equivalent levels of pii protection."
+13.s,to monitor and audit pii protection controls and the effectiveness of internal pii protection policy.
+13.t,to provide suitable training and awareness concerning pii protection for the personnel of the pii controller who will have access to pii.
+13.u,"to develop, disseminate and update pii protection reports."

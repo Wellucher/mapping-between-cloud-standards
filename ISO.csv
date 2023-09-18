@@ -1,0 +1,151 @@
+ID,TEXT
+A.5.1,to provide management direction and support for information security in accordance with business requirements and relevant laws and regulations.
+A.5.1.1,"a set of policies for information security shall be defined, approved by management, published and communicated to employees and relevant external parties."
+A.5.1.2,"the policies for information security shall be reviewed at planned intervals or if significant changes occur to ensure their continuing suitability, adequacy and effectiveness."
+A.6.1,to establish a management framework to initiate and control the implementation and operation of information security within the organization.
+A.6.1.1,all information security responsibilities shall be defined and allocated.
+A.6.1.2,conflicting duties and areas of responsibility shall be segregated to reduce opportunities for unauthorized or unintentional modification or misuse of the organizations assets.
+A.6.1.3,appropriate contacts with relevant authorities shall be maintained.
+A.6.1.4,appropriate contacts with special interest groups or other specialist security forums and professional associations shall be maintained.
+A.6.1.5,"information security shall be addressed in project management, regardless of the type of the project."
+A.6.2,to ensure the security of teleworking and use of mobile devices.
+A.6.2.1,a policy and supporting security measures shall be adopted to manage the risks introduced by using mobile devices.
+A.6.2.2,"a policy and supporting security measures shall be implemented to protect information accessed, processed or stored at teleworking sites."
+A.7.1,to ensure that employees and contractors understand their responsibilities and are suitable for the roles for which they are considered.
+A.7.1.1,"background verification checks on all candidates for employment shall be carried out in accordance with relevant laws, regulations and ethics and shall be proportional to the business requirements, the classification of the information to be accessed and the perceived risks."
+A.7.1.2,the contractual agreements with employees and contractors shall state their and the organizations responsibilities for information security.
+A.7.2,to ensure that employees and contractors are aware of and fulfil their information security responsibilities.
+A.7.2.1,management shall require all employees and contractors to apply information security in accordance with the established policies and procedures of the organization.
+A.7.2.2,"all employees of the organization and, where relevant, contractors shall receive appropriate awareness education and training and regular updates in organizational policies and procedures, as relevant for their job function."
+A.7.2.3,there shall be a formal and communicated disciplinary process in place to take action against employees who have committed an information security breach.
+A.7.3,to protect the organizations interests as part of the process of changing or terminating employment.
+A.7.3.1,"information security responsibilities and duties that remain valid after termination or change of employment shall be defined, communicated to the employee or contractor and enforced."
+A.8,"to identify organizational assets and define appropriate protection responsibilities. assets associated with information and information processing facilities shall be identified and an inventory of these assets shall be drawn up and maintained. assets maintained in the inventory shall be owned. rules for the acceptable use of information and of assets associated with information and information processing facilities shall be identified, documented and implemented. all employees and external party users shall return all of the organizational assets in their possession upon termination of their employment, contract or agreement. to ensure that information receives an appropriate level of protection in accordance with its importance to the organization. information shall be classified in terms of legal requirements, value, criticality and sensitivity to unauthorised disclosure or modification. an appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information classification scheme adopted by the organization.procedures for handling assets shall be developed and implemented in accordance with the information classification scheme adopted by the organization. to prevent unauthorized disclosure, modification, removal or destruction of information stored on media.procedures shall be implemented for the management of removable media in accordance with the classification scheme adopted by the organization. procedures shall be implemented for the management of removable media in accordance with the classification scheme adopted by the organization. media shall be disposed of securely when no longer required, using formal procedures. media containing information shall be protected against unauthorized access, misuse or corruption during transportation."
+A.8.1,to identify organizational assets and define appropriate protection responsibilities.
+A.8.1.1,assets associated with information and information processing facilities shall be identified and an inventory of these assets shall be drawn up and maintained.
+A.8.1.2,assets maintained in the inventory shall be owned.
+A.8.1.3,"rules for the acceptable use of information and of assets associated with information and information processing facilities shall be identified, documented and implemented."
+A.8.1.4,"all employees and external party users shall return all of the organizational assets in their possession upon termination of their employment, contract or agreement."
+A.8.2,to ensure that information receives an appropriate level of protection in accordance with its importance to the organization.
+A.8.2.1,"information shall be classified in terms of legal requirements, value, criticality and sensitivity to unauthorised disclosure or modification."
+A.8.2.2,an appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information classification scheme adopted by the organization.
+A.8.2.3,procedures for handling assets shall be developed and implemented in accordance with the information classification scheme adopted by the organization.
+A.8.3,"to prevent unauthorized disclosure, modification, removal or destruction of information stored on media."
+A.8.3.1,procedures shall be implemented for the management of removable media in accordance with the classification scheme adopted by the organization.
+A.8.3.2,"media shall be disposed of securely when no longer required, using formal procedures."
+A.8.3.3,"media containing information shall be protected against unauthorized access, misuse or corruption during transportation."
+A.9.1,to limit access to information and information processing facilities.
+A.9.1.1,"an access control policy shall be established, documented and reviewed based on business and information security requirements."
+A.9.1.2,users shall only be provided with access to the network and network services that they have been specifically authorized to use.
+A.9.2,to ensure authorized user access and to prevent unauthorized access to systems and services.
+A.9.2.1,a formal user registration and de-registration process shall be implemented to enable assignment of access rights.
+A.9.2.2,a formal user access provisioning process shall be implemented to assign or revoke access rights for all user types to all systems and services.
+A.9.2.3,the allocation and use of privileged access rights shall be restricted and controlled.
+A.9.2.4,the allocation of secret authentication information shall be controlled through a formal management process.
+A.9.2.5,asset owners shall review users access rights at regular intervals.
+A.9.2.6,"the access rights of all employees and external party users to information and information processing facilities shall be removed upon termination of their employment, contract or agreement, or adjusted upon change."
+A.9.3,to make users accountable for safeguarding their authentication information.
+A.9.3.1,users shall be required to follow the organizations practices in the use of secret authentication information.
+A.9.4,to prevent unauthorized access to systems and applications.
+A.9.4.1,access to information and application system functions shall be restricted in accordance with the access control policy.
+A.9.4.2,"where required by the access control policy, access to systems and applications shall be controlled by a secure log-on procedure."
+A.9.4.3,password management systems shall be interactive and shall ensure quality passwords.
+A.9.4.4,the use of utility programs that might be capable of overriding system and application controls shall be restricted and tightly controlled.
+A.9.4.5,access to program source code shall be restricted.
+A.10.1,"to ensure proper and effective use of cryptography to protect the confidentiality, authenticity andor integrity of information."
+A.10.1.1,a policy on the use of cryptographic controls for protection of information shall be developed and implemented.
+A.10.1.2,"a policy on the use, protection and lifetime of cryptographic keys shall be developed and implemented through their whole lifecycle."
+A.11.1,"to prevent unauthorized physical access, damage and interference to the organizations information and information processing facilities."
+A.11.1.1,security perimeters shall be defined and used to protect areas that contain either sensitive or critical information and information processing facilities.
+A.11.1.2,secure areas shall be protected by appropriate entry controls to ensure that only authorized personnel are allowed access.
+A.11.1.3,"physical security for offices, rooms and facilities shall be designed and applied."
+A.11.1.4,"physical protection against natural disasters, malicious attack or accidents shall be designed and applied."
+A.11.1.5,procedures for working in secure areas shall be designed and applied.
+A.11.1.6,"access points such as delivery and loading areas and other points where unauthorized persons could enter the premises shall be controlled and, if possible, isolated from information processing facilities to avoid unauthorized access."
+A.11.2,"to prevent loss, damage, theft or compromise of assets and interruption to the organizations operations."
+A.11.2.1,"equipment shall be sited and protected to reduce the risks from environmental threats and hazards, and opportunities for unauthorized access."
+A.11.2.2,equipment shall be protected from power failures and other disruptions caused by failures in supporting utilities.
+A.11.2.3,"power and telecommunications cabling carrying data or supporting information services shall be protected from interception, interference or damage."
+A.11.2.4,equipment shall be correctly maintained to ensure its continued availability and integrity.
+A.11.2.5,"equipment, information or software shall not be taken off-site without prior authorization."
+A.11.2.6,security shall be applied to offsite assets taking into account the different risks of working outside the organizations premises.
+A.11.2.7,all items of equipment containing storage media shall be verified to ensure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.
+A.11.2.8,users shall ensure that unattended equipment has appropriate protection.
+A.11.2.9,a clear desk policy for papers and removable storage media and a clear screen policy for information processing facilities shall be adopted.
+A.12.1,to ensure correct and secure operations of information processing facilities.
+A.12.1.1,operating procedures shall be documented and made available to all users who need them.
+A.12.1.2,"changes to the organization, business processes, information processing facilities and systems that affect information security shall be controlled."
+A.12.1.3,"the use of resources shall be monitored, tuned and projections made of future capacity requirements to ensure the required system performance."
+A.12.1.4,"development, testing, and operational environments shall be separated to reduce the risks of unauthorized access or changes to the operational environment."
+A.12.2,to ensure that information and information processing facilities are protected against malware.
+A.12.2.1,"detection, prevention and recovery controls to protect against malware shall be implemented, combined with appropriate user awareness."
+A.12.3,to protect against loss of data.
+A.12.3.1,"backup copies of information, software and system images shall be taken and tested regularly in accordance with an agreed backup policy."
+A.12.4,to record events and generate evidence.
+A.12.4.1,"event logs recording user activities, exceptions, faults and information security events shall be produced, kept and regularly reviewed."
+A.12.4.2,logging facilities and log information shall be protected against tampering and unauthorized access.
+A.12.4.3,system administrator and system operator activities shall be logged and the logs protected and regularly reviewed.
+A.12.4.4,the clocks of all relevant information processing systems within an organization or security domain shall be synchronised to a single reference time source.
+A.12.5,to ensure the integrity of operational systems.
+A.12.5.1,procedures shall be implemented to control the installation of software on operational systems.
+A.12.6,to prevent exploitation of technical vulnerabilities.
+A.12.6.1,"information about technical vulnerabilities of information systems being used shall be obtained in a timely fashion, the organizations exposure to such vulnerabilities evaluated and appropriate measures taken to address the associated risk."
+A.12.6.2,rules governing the installation of software by users shall be established and implemented.
+A.12.7,to minimise the impact of audit activities on operational systems.
+A.12.7.1,audit requirements and activities involving verification of operational systems shall be carefully planned and agreed to minimise disruptions to business processes.
+A.13.1,to ensure the protection of information in networks and its supporting information processing facilities.
+A.13.1.1,networks shall be managed and controlled to protect information in systems and applications.
+A.13.1.2,"security mechanisms, service levels and management requirements of all network services shall be identified and included in network services agreements, whether these services are provided in-house or outsourced."
+A.13.1.3,"groups of information services, users and information systems shall be segregated on networks."
+A.13.2,to maintain the security of information transferred within an organization and with any external entity.
+A.13.2.1,"formal transfer policies, procedures and controls shall be in place to protect the transfer of information through the use of all types of communication facilities."
+A.13.2.2,agreements shall address the secure transfer of business information between the organization and external parties.
+A.13.2.3,information involved in electronic messaging shall be appropriately protected.
+A.13.2.4,"requirements for confidentiality or non-disclosure agreements reflecting the organizations needs for the protection of information shall be identified, regularly reviewed and documented."
+A.14.1,to ensure that information security is an integral part of information systems across the entire lifecycle. this also includes the requirements for information systems which provide services over public networks.
+A.14.1.1,the information security related requirements shall be included in the requirements for new information systems or enhancements to existing information systems.
+A.14.1.2,"information involved in application services passing over public networks shall be protected from fraudulent activity, contract dispute and unauthorized disclosure and modification."
+A.14.1.3,"information involved in application service transactions shall be protected to prevent incomplete transmission, mis-routing, unauthorized message alteration, unauthorized disclosure, unauthorized message duplication or replay."
+A.14.2,to ensure that information security is designed and implemented within the development lifecycle of information systems.
+A.14.2.1,rules for the development of software and systems shall be established and applied to developments within the organization.
+A.14.2.2,changes to systems within the development lifecycle shall be controlled by the use of formal change control procedures.
+A.14.2.3,"when operating platforms are changed, business critical applications shall be reviewed and tested to ensure there is no adverse impact on organizational operations or security."
+A.14.2.4,"modifications to software packages shall be discouraged, limited to necessary changes and all changes shall be strictly controlled."
+A.14.2.5,"principles for engineering secure systems shall be established, documented, maintained and applied to any information system implementation efforts."
+A.14.2.6,organizations shall establish and appropriately protect secure development environments for system development and integration efforts that cover the entire system development lifecycle.
+A.14.2.7,the organization shall supervise and monitor the activity of outsourced system development.
+A.14.2.8,testing of security functionality shall be carried out during development.
+A.14.2.9,"acceptance testing programs and related criteria shall be established for new information systems, upgrades and new versions."
+A.14.3,to ensure the protection of data used for testing.
+A.14.3.1,"test data shall be selected carefully, protected and controlled."
+A.15.1,to ensure protection of the organizations assets that is accessible by suppliers.
+A.15.1.1,information security requirements for mitigating the risks associated with suppliers access to the organizations assets shall be agreed with the supplier and documented.
+A.15.1.2,"all relevant information security requirements shall be established and agreed with each supplier that may access, process, store, communicate, or provide it infrastructure components for, the organizations information."
+A.15.1.3,employees and contractors using the organizations information systems and services shall be required to note and report any observed or suspected information security weaknesses in systems or services.
+A.15.2,to maintain an agreed level of information security and service delivery in line with supplier agreements.
+A.15.2.1,"organizations shall regularly monitor, review and audit supplier service delivery."
+A.15.2.2,"changes to the provision of services by suppliers, including maintaining and improving existing information security policies, procedures and controls, shall be managed, taking account of the criticality of business information, systems and processes involved and re-assessment of risks."
+A.16.1,"to ensure a consistent and effective approach to the management of information security incidents, including communication on security events and weaknesses."
+A.16.1.1,"management responsibilities and procedures shall be established to ensure a quick, effective and orderly response to information security incidents."
+A.16.1.2,information security events shall be reported through appropriate management channels as quickly as possible.
+A.16.1.3,employees and contractors using the organizations information systems and services shall be required to note and report any observed or suspected information security weaknesses in systems or services.
+A.16.1.4,information security events shall be assessed and it shall be decided if they are to be classified as information security incidents.
+A.16.1.5,information security incidents shall be responded to in accordance with the documented procedures.
+A.16.1.6,knowledge gained from analysing and resolving information security incidents shall be used to reduce the likelihood or impact of future incidents.
+A.16.1.7,"the organization shall define and apply procedures for the identification, collection, acquisition and preservation of information, which can serve as evidence."
+A.17.1,information security continuity shall be embedded in the organizations business continuity management systems.
+A.17.1.1,"the organization shall determine its requirements for information security and the continuity of information security management in adverse situations, e.g. during a crisis or disaster."
+A.17.1.2,"the organization shall establish, document, implement and maintain processes, procedures and controls to ensure the required level of continuity for information security during an adverse situation."
+A.17.1.3,the organization shall verify the established and implemented information security continuity controls at regular intervals in order to ensure that they are valid and effective during adverse situations.
+A.17.2,to ensure availability of information processing facilities.
+A.17.2.1,information processing facilities shall be implemented with redundancy sufficient to meet availability requirements.
+A.18.1,"to avoid breaches of legal, statutory, regulatory or contractual obligations related to information security and of any security requirements."
+A.18.1.1,"all relevant legislative statutory, regulatory, contractual requirements and the organizations approach to meet these requirements shall be explicitly identified, documented and kept up to date for each information system and the organization."
+A.18.1.2,"appropriate procedures shall be implemented to ensure compliance with legislative, regulatory and contractual requirements related to intellectual property rights and use of proprietary software products."
+A.18.1.3,"records shall be protected from loss, destruction, falsification, unauthorized access and unauthorized release, in accordance with legislator regulatory, contractual and business requirements."
+A.18.1.4,privacy and protection of personally identifiable information shall be ensured as required in relevant legislation and regulation where applicable.
+A.18.1.5,"cryptographic controls shall be used in compliance with all relevant agreements, legislation and regulations."
+A.18.2,to ensure that information security is implemented and operated in accordance with the organizational policies and procedures.
+A.18.2.1,"the organizations approach to managing information security and its implementation i.e. control objectives, controls, policies, processes and procedures for information security shall be reviewed independently at planned intervals or when significant changes occur."
+A.18.2.2,"managers shall regularly review the compliance of information processing and procedures within their area of responsibility with the appropriate security policies, standards and any other security requirements."
+A.18.2.3,information systems shall be regularly reviewed for compliance with the organizations information security policies and standards.
