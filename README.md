@@ -53,3 +53,5 @@ AICPA TSC 2017	| https://us.aicpa.org/content/dam/aicpa/interestareas/frc/assura
 FedRAMP R4 Moderate	| https://www.fedramp.gov/documents-templates/	| .xlsx
 
 CIS	| https://www.cisecurity.org/benchmark/amazon_web_services?sc_camp=F08237A092B040A590AA789FA2FB9C40&gclid=CjwKCAjwo9unBhBTEiwAipC111rLhM0-QLavhVst8bFO93KUM7DfG_OD5pNwTbzKLrXYoXANGorM-BoCBlkQAvD_BwE	| .pdf
+
+Contributor: Yuchen Wong, Chen Yan, Shengfang zhai, Yuqin Qiu.
