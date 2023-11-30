@@ -1,12 +1,18 @@
 # mapping-between-cloud-standards
 
-The texts of control items extracted from the original standard file: standards/ .
+Contributor: Yuchen Wong, Chen Yan, Shengfang zhai, Yuqin Qiu. 
 
-The control item mappings between processed pairwise standards: mappings/ .
+File Describtion:
 
-Example of grouping training and test sets for experiments: examples/ (to be updated after publication).
+	-The texts of control items extracted from the original standard file: standards/ .
 
-The original standards are list as follows:
+	-The control item mappings between processed pairwise standards: mappings/ .
+
+	-Example of grouping training and test sets for experiments: examples/ (to be updated after publication).
+
+ 	-The detail process of data preprocessing is shown in file: data_preprocessing.md .
+
+The Original Standards are list as follows:
 
 Standard Name   |   Website    |    File Format
 
@@ -54,4 +60,4 @@ FedRAMP R4 Moderate	| https://www.fedramp.gov/documents-templates/	| .xlsx
 
 CIS	| https://www.cisecurity.org/benchmark/amazon_web_services?sc_camp=F08237A092B040A590AA789FA2FB9C40&gclid=CjwKCAjwo9unBhBTEiwAipC111rLhM0-QLavhVst8bFO93KUM7DfG_OD5pNwTbzKLrXYoXANGorM-BoCBlkQAvD_BwE	| .pdf
 
-Contributor: Yuchen Wong, Chen Yan, Shengfang zhai, Yuqin Qiu.
+
